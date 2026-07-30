@@ -1,0 +1,17 @@
+{
+  "created_at_utc": "2026-07-30T08:01:45.263413+00:00",
+  "orders": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "alpha": 0.1,
+  "training_split": "dev",
+  "evaluation_split": "devtest",
+  "unit": "UTF-8 bytes",
+  "bos_policy": "order-1 dedicated BOS symbols per sentence; BOS not scored",
+  "eos_policy": "no EOS symbol is scored",
+  "rows": 131560
+}

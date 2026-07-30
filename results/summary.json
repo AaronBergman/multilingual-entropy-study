@@ -1,0 +1,121 @@
+{
+  "created_at_utc": "2026-07-30T09:33:23.295274+00:00",
+  "n_languages": 13,
+  "n_sentences_per_language": 1012,
+  "primary_metrics": [
+    "ngram_monolingual_o5_a0.1",
+    "ngram_multilingual_balanced_o5_a0.1",
+    "mlx-community__Qwen3-0.6B-4bit",
+    "mlx-community__Qwen3-4B-4bit"
+  ],
+  "larger_model": {
+    "languages_with_lower_bpb": 13,
+    "languages_total": 13,
+    "mean_language_improvement_bpb": 0.1952845386504176,
+    "min_language_improvement_bpb": 0.047532209603678474,
+    "max_language_improvement_bpb": 0.7018067593828698,
+    "languages_with_positive_improvement_ci": 13,
+    "small_large_spearman_rho": 0.9725274725274725,
+    "small_large_kendall_tau": 0.8974358974358972
+  },
+  "ngram_vs_large_llm": {
+    "spearman_rho": 0.6373626373626374,
+    "spearman_p": 0.0191181137774633,
+    "kendall_tau": 0.46153846153846145,
+    "kendall_p": 0.030482440656051768,
+    "character_normalized_spearman_rho": 0.5439560439560439,
+    "character_normalized_kendall_tau": 0.4102564102564102
+  },
+  "rank_changes": [
+    {
+      "metric_1": "ngram_monolingual_o5_a0.1",
+      "metric_1_label": "Monolingual byte 5-gram",
+      "metric_2": "mlx-community__Qwen3-0.6B-4bit",
+      "metric_2_label": "Qwen3 0.6B (4-bit)",
+      "median_absolute_rank_change": 2.0,
+      "maximum_absolute_rank_change": 7.0,
+      "largest_mover_language": "eng_Latn",
+      "largest_mover_language_name": "English",
+      "largest_mover_signed_rank_change": -7.0
+    },
+    {
+      "metric_1": "ngram_monolingual_o5_a0.1",
+      "metric_1_label": "Monolingual byte 5-gram",
+      "metric_2": "mlx-community__Qwen3-4B-4bit",
+      "metric_2_label": "Qwen3 4B (4-bit)",
+      "median_absolute_rank_change": 1.0,
+      "maximum_absolute_rank_change": 7.0,
+      "largest_mover_language": "eng_Latn",
+      "largest_mover_language_name": "English",
+      "largest_mover_signed_rank_change": -7.0
+    },
+    {
+      "metric_1": "ngram_multilingual_balanced_o5_a0.1",
+      "metric_1_label": "Balanced multilingual byte 5-gram",
+      "metric_2": "mlx-community__Qwen3-4B-4bit",
+      "metric_2_label": "Qwen3 4B (4-bit)",
+      "median_absolute_rank_change": 1.0,
+      "maximum_absolute_rank_change": 7.0,
+      "largest_mover_language": "eng_Latn",
+      "largest_mover_language_name": "English",
+      "largest_mover_signed_rank_change": -7.0
+    },
+    {
+      "metric_1": "mlx-community__Qwen3-0.6B-4bit",
+      "metric_1_label": "Qwen3 0.6B (4-bit)",
+      "metric_2": "mlx-community__Qwen3-4B-4bit",
+      "metric_2_label": "Qwen3 4B (4-bit)",
+      "median_absolute_rank_change": 1.0,
+      "maximum_absolute_rank_change": 2.0,
+      "largest_mover_language": "tam_Taml",
+      "largest_mover_language_name": "Tamil",
+      "largest_mover_signed_rank_change": -2.0
+    }
+  ],
+  "tokenizer_diagnostics": [
+    {
+      "model": "mlx-community/Qwen3-0.6B-4bit",
+      "tokens_per_character_vs_bpb_spearman": -0.08241758241758242,
+      "tokens_per_character_vs_bpc_spearman": 0.7197802197802198
+    },
+    {
+      "model": "mlx-community/Qwen3-4B-4bit",
+      "tokens_per_character_vs_bpb_spearman": -0.08241758241758242,
+      "tokens_per_character_vs_bpc_spearman": 0.6758241758241759
+    }
+  ],
+  "cross_language_dispersion": [
+    {
+      "metric": "mlx-community__Qwen3-0.6B-4bit",
+      "metric_label": "Qwen3 0.6B (4-bit)",
+      "mean": 1.6884144300741193,
+      "std": 0.8452407350810475,
+      "min": 0.8017265986356498,
+      "max": 3.474440066733921
+    },
+    {
+      "metric": "mlx-community__Qwen3-4B-4bit",
+      "metric_label": "Qwen3 4B (4-bit)",
+      "mean": 1.4931298914237017,
+      "std": 0.7212197704334223,
+      "min": 0.7483691973047323,
+      "max": 3.116846891179866
+    },
+    {
+      "metric": "ngram_monolingual_o5_a0.1",
+      "metric_label": "Monolingual byte 5-gram",
+      "mean": 3.133341597587476,
+      "std": 1.232103041742472,
+      "min": 1.3129335517338914,
+      "max": 5.567550661326827
+    },
+    {
+      "metric": "ngram_multilingual_balanced_o5_a0.1",
+      "metric_label": "Balanced multilingual byte 5-gram",
+      "mean": 3.1101493947877823,
+      "std": 1.2073729551799413,
+      "min": 1.3202779349558191,
+      "max": 5.525425488760844
+    }
+  ]
+}

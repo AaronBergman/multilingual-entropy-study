@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this study or code, please cite it as below."
+title: "Do language difficulty patterns change from n-grams to LLMs?"
+type: software
+authors:
+  - family-names: Bergman
+    given-names: Aaron
+version: 0.1.0
+date-released: 2026-07-30
+license: MIT

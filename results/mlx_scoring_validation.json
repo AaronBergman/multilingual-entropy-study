@@ -1,0 +1,64 @@
+{
+  "created_at_utc": "2026-07-30T08:15:19.909929+00:00",
+  "model": "mlx-community/Qwen3-0.6B-4bit",
+  "snapshot_revision": "73e3e38d981303bc594367cd910ea6eb48349da8",
+  "absolute_tolerance_bits": 0.1,
+  "examples": [
+    {
+      "language": "zho_Hans",
+      "sentence_id": 126,
+      "tokens": 7,
+      "direct_bits": 82.23685455322266,
+      "streaming_bits": 82.23685455322266,
+      "difference_bits": 0.0,
+      "absolute_difference_bits": 0.0,
+      "peak_gib": 0.35298576578497887,
+      "passed": true
+    },
+    {
+      "language": "zho_Hans",
+      "sentence_id": 262,
+      "tokens": 8,
+      "direct_bits": 93.87701416015625,
+      "streaming_bits": 93.87701416015625,
+      "difference_bits": 0.0,
+      "absolute_difference_bits": 0.0,
+      "peak_gib": 0.35298576578497887,
+      "passed": true
+    },
+    {
+      "language": "zho_Hans",
+      "sentence_id": 393,
+      "tokens": 8,
+      "direct_bits": 74.78192138671875,
+      "streaming_bits": 74.78192138671875,
+      "difference_bits": 0.0,
+      "absolute_difference_bits": 0.0,
+      "peak_gib": 0.35298576578497887,
+      "passed": true
+    },
+    {
+      "language": "zho_Hans",
+      "sentence_id": 178,
+      "tokens": 9,
+      "direct_bits": 102.55169677734375,
+      "streaming_bits": 102.46546459197998,
+      "difference_bits": -0.08623218536376953,
+      "absolute_difference_bits": 0.08623218536376953,
+      "peak_gib": 0.35298576578497887,
+      "passed": true
+    },
+    {
+      "language": "eng_Latn",
+      "sentence_id": 319,
+      "tokens": 9,
+      "direct_bits": 95.2929916381836,
+      "streaming_bits": 95.3039882183075,
+      "difference_bits": 0.010996580123901367,
+      "absolute_difference_bits": 0.010996580123901367,
+      "peak_gib": 0.35298576578497887,
+      "passed": true
+    }
+  ],
+  "all_passed": true
+}

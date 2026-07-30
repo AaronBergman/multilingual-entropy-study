@@ -1,0 +1,7 @@
+metric_1,metric_1_label,metric_2,metric_2_label,spearman_rho,spearman_p,kendall_tau,kendall_p,n_languages
+ngram_monolingual_o5_a0.1,Monolingual byte 5-gram,ngram_multilingual_balanced_o5_a0.1,Balanced multilingual byte 5-gram,0.989010989010989,1.7507283021964813e-10,0.9487179487179485,2.8906278906278905e-08,13
+ngram_monolingual_o5_a0.1,Monolingual byte 5-gram,mlx-community__Qwen3-0.6B-4bit,Qwen3 0.6B (4-bit),0.6428571428571429,0.01779245069237571,0.46153846153846145,0.030482440656051768,13
+ngram_monolingual_o5_a0.1,Monolingual byte 5-gram,mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),0.6373626373626374,0.0191181137774633,0.46153846153846145,0.030482440656051768,13
+ngram_multilingual_balanced_o5_a0.1,Balanced multilingual byte 5-gram,mlx-community__Qwen3-0.6B-4bit,Qwen3 0.6B (4-bit),0.6208791208791209,0.023538167096433065,0.4102564102564102,0.05725682817696707,13
+ngram_multilingual_balanced_o5_a0.1,Balanced multilingual byte 5-gram,mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),0.6318681318681317,0.020516042572872473,0.46153846153846145,0.030482440656051768,13
+mlx-community__Qwen3-0.6B-4bit,Qwen3 0.6B (4-bit),mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),0.9725274725274725,2.619133043827397e-08,0.8974358974358972,5.508252036029814e-07,13

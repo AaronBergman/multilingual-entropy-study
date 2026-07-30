@@ -1,0 +1,306 @@
+{
+  "research_question": "Do cross-language complexity rankings change between byte n-gram cross-entropy and gzip compression?",
+  "dataset": {
+    "name": "NTREX-128",
+    "source_commit": "468c6b69c7f6a75d31d4743d9daba2af566cc18d",
+    "languages_including_english_source": 128,
+    "sentences_per_language": 1997,
+    "aligned_train_sentences": 1397,
+    "aligned_test_sentences": 600
+  },
+  "text_processing": {
+    "unicode_normalization": "NFC",
+    "encoding": "UTF-8",
+    "separator": "LF after every sentence including final sentence"
+  },
+  "gzip": {
+    "implementation": "Python gzip.compress",
+    "level": 9,
+    "mtime": 0,
+    "empty_stream_bytes": 20,
+    "primary_metric": "header-corrected compressed bits per original byte",
+    "interpretation": "finite-sample compression proxy; not probabilistic cross-entropy"
+  },
+  "ngram": {
+    "unit": "raw UTF-8 bytes",
+    "orders": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "alpha": 0.1,
+    "alphabet_size": 256,
+    "primary_order": 4,
+    "primary_metric": "held-out cross-entropy in bits per byte"
+  },
+  "primary_correlation": {
+    "ngram_order": 4,
+    "spearman_rho": 0.9739173228346455,
+    "spearman_p_value": 4.989969269521834e-83,
+    "kendall_tau": 0.8968996062992127,
+    "kendall_p_value": 5.821646497219268e-51
+  },
+  "secondary_codepoint_correlation": {
+    "ngram_order": 4,
+    "spearman_rho": 0.9759716626991394,
+    "spearman_p_value": 3.027374447054852e-85,
+    "kendall_tau": 0.8806594488188978,
+    "kendall_p_value": 3.3871999945108525e-49
+  },
+  "rank_shift_summary": {
+    "bits_per_byte": {
+      "median": 3.0,
+      "percentile_90": 10.299999999999997,
+      "maximum": 65.0,
+      "languages_with_shift_at_most_5": 88,
+      "languages_with_shift_at_most_10": 115
+    },
+    "bits_per_codepoint": {
+      "median": 4.0,
+      "percentile_90": 12.0,
+      "maximum": 40.0,
+      "languages_with_shift_at_most_5": 78,
+      "languages_with_shift_at_most_10": 110
+    }
+  },
+  "encoding_diagnostics": {
+    "gzip_bpb_vs_utf8_bytes_per_codepoint_spearman": -0.6173663248489287,
+    "ngram_4_bpb_vs_utf8_bytes_per_codepoint_spearman": -0.6193577183665995
+  },
+  "distribution_shift_diagnostic": {
+    "absolute_rank_shift_vs_train_test_byte_js_divergence_spearman": 0.018042209131386225,
+    "largest_byte_distribution_shifts": [
+      {
+        "language_code": "lao",
+        "language_name": "Lao",
+        "js_divergence_bits": 0.03643216806194863
+      },
+      {
+        "language_code": "yor",
+        "language_name": "Yoruba",
+        "js_divergence_bits": 0.03148983972021997
+      },
+      {
+        "language_code": "srp-Cyrl",
+        "language_name": "Serbian (Cyrillic)",
+        "js_divergence_bits": 0.012865817760567343
+      },
+      {
+        "language_code": "kor",
+        "language_name": "Korean",
+        "js_divergence_bits": 0.011739492047113095
+      },
+      {
+        "language_code": "shi",
+        "language_name": "Shilha",
+        "js_divergence_bits": 0.011717945919824505
+      },
+      {
+        "language_code": "fas",
+        "language_name": "Persian",
+        "js_divergence_bits": 0.011421577922747716
+      },
+      {
+        "language_code": "pol",
+        "language_name": "Polish",
+        "js_divergence_bits": 0.01082079751386975
+      },
+      {
+        "language_code": "amh",
+        "language_name": "Amharic",
+        "js_divergence_bits": 0.009114542736124179
+      },
+      {
+        "language_code": "ita",
+        "language_name": "Italian",
+        "js_divergence_bits": 0.008793056722034101
+      },
+      {
+        "language_code": "zho-CN",
+        "language_name": "Chinese (Simplified)",
+        "js_divergence_bits": 0.00689504186231114
+      }
+    ]
+  },
+  "small_sample_overhead": [
+    {
+      "sentence_count": 1,
+      "median_original_bytes": 125.5,
+      "median_raw_bits_per_byte": 8.072411533420707,
+      "median_corrected_bits_per_byte": 6.721628838451268,
+      "median_empty_stream_correction_bits_per_byte": 1.274920634920635
+    },
+    {
+      "sentence_count": 2,
+      "median_original_bytes": 211.0,
+      "median_raw_bits_per_byte": 6.547608443929812,
+      "median_corrected_bits_per_byte": 5.766132060290726,
+      "median_empty_stream_correction_bits_per_byte": 0.758310871518419
+    },
+    {
+      "sentence_count": 5,
+      "median_original_bytes": 651.5,
+      "median_raw_bits_per_byte": 4.243098744352791,
+      "median_corrected_bits_per_byte": 4.016349635596088,
+      "median_empty_stream_correction_bits_per_byte": 0.24558725132641634
+    },
+    {
+      "sentence_count": 10,
+      "median_original_bytes": 1545.0,
+      "median_raw_bits_per_byte": 3.6553264972360333,
+      "median_corrected_bits_per_byte": 3.54712638004057,
+      "median_empty_stream_correction_bits_per_byte": 0.10355987055016169
+    },
+    {
+      "sentence_count": 20,
+      "median_original_bytes": 3082.0,
+      "median_raw_bits_per_byte": 3.539680969674529,
+      "median_corrected_bits_per_byte": 3.488683894527271,
+      "median_empty_stream_correction_bits_per_byte": 0.051914390525455545
+    },
+    {
+      "sentence_count": 50,
+      "median_original_bytes": 7070.5,
+      "median_raw_bits_per_byte": 3.295450174579796,
+      "median_corrected_bits_per_byte": 3.2720818570286947,
+      "median_empty_stream_correction_bits_per_byte": 0.02262968330005477
+    },
+    {
+      "sentence_count": 100,
+      "median_original_bytes": 16291.5,
+      "median_raw_bits_per_byte": 3.2611995716172264,
+      "median_corrected_bits_per_byte": 3.250587410696717,
+      "median_empty_stream_correction_bits_per_byte": 0.009821124374059798
+    },
+    {
+      "sentence_count": 250,
+      "median_original_bytes": 38312.5,
+      "median_raw_bits_per_byte": 3.0302910429741132,
+      "median_corrected_bits_per_byte": 3.0261533570627113,
+      "median_empty_stream_correction_bits_per_byte": 0.004176189400405539
+    },
+    {
+      "sentence_count": 500,
+      "median_original_bytes": 71407.5,
+      "median_raw_bits_per_byte": 2.9134493132600507,
+      "median_corrected_bits_per_byte": 2.9112226542128745,
+      "median_empty_stream_correction_bits_per_byte": 0.002240661114627951
+    }
+  ],
+  "largest_absolute_rank_shifts": [
+    {
+      "language_code": "yor",
+      "language_name": "Yoruba",
+      "gzip_rank": 58.0,
+      "ngram_4_rank": 123.0,
+      "gzip_minus_ngram_rank": -65.0
+    },
+    {
+      "language_code": "som",
+      "language_name": "Somali",
+      "gzip_rank": 96.0,
+      "ngram_4_rank": 121.0,
+      "gzip_minus_ngram_rank": -25.0
+    },
+    {
+      "language_code": "fra",
+      "language_name": "French",
+      "gzip_rank": 75.0,
+      "ngram_4_rank": 58.0,
+      "gzip_minus_ngram_rank": 17.0
+    },
+    {
+      "language_code": "fao",
+      "language_name": "Faroese",
+      "gzip_rank": 100.0,
+      "ngram_4_rank": 86.0,
+      "gzip_minus_ngram_rank": 14.0
+    },
+    {
+      "language_code": "kor",
+      "language_name": "Korean",
+      "gzip_rank": 71.0,
+      "ngram_4_rank": 57.0,
+      "gzip_minus_ngram_rank": 14.0
+    },
+    {
+      "language_code": "ltz",
+      "language_name": "Luxembourgish",
+      "gzip_rank": 106.0,
+      "ngram_4_rank": 120.0,
+      "gzip_minus_ngram_rank": -14.0
+    },
+    {
+      "language_code": "orm",
+      "language_name": "Oromo",
+      "gzip_rank": 82.0,
+      "ngram_4_rank": 68.0,
+      "gzip_minus_ngram_rank": 14.0
+    },
+    {
+      "language_code": "ssw",
+      "language_name": "Swati",
+      "gzip_rank": 85.0,
+      "ngram_4_rank": 99.0,
+      "gzip_minus_ngram_rank": -14.0
+    },
+    {
+      "language_code": "eus",
+      "language_name": "Basque",
+      "gzip_rank": 77.0,
+      "ngram_4_rank": 90.0,
+      "gzip_minus_ngram_rank": -13.0
+    },
+    {
+      "language_code": "msa",
+      "language_name": "Malay",
+      "gzip_rank": 62.0,
+      "ngram_4_rank": 74.0,
+      "gzip_minus_ngram_rank": -12.0
+    },
+    {
+      "language_code": "xho",
+      "language_name": "Xhosa",
+      "gzip_rank": 103.0,
+      "ngram_4_rank": 115.0,
+      "gzip_minus_ngram_rank": -12.0
+    },
+    {
+      "language_code": "deu",
+      "language_name": "German",
+      "gzip_rank": 102.0,
+      "ngram_4_rank": 91.0,
+      "gzip_minus_ngram_rank": 11.0
+    },
+    {
+      "language_code": "fra-CA",
+      "language_name": "French (Canada)",
+      "gzip_rank": 76.0,
+      "ngram_4_rank": 65.0,
+      "gzip_minus_ngram_rank": 11.0
+    },
+    {
+      "language_code": "eng-IN",
+      "language_name": "English (India)",
+      "gzip_rank": 114.0,
+      "ngram_4_rank": 104.0,
+      "gzip_minus_ngram_rank": 10.0
+    },
+    {
+      "language_code": "ewe",
+      "language_name": "Ewe",
+      "gzip_rank": 78.0,
+      "ngram_4_rank": 88.0,
+      "gzip_minus_ngram_rank": -10.0
+    }
+  ],
+  "runtime": {
+    "python": "3.13.13 | packaged by conda-forge | (main, Apr  8 2026, 02:29:07) [Clang 19.1.7 ]",
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "unicode_database": "15.1.0",
+    "numpy": "2.5.1",
+    "scipy": "1.18.0"
+  }
+}

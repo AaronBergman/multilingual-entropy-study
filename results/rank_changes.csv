@@ -1,0 +1,53 @@
+metric_1,metric_1_label,metric_2,metric_2_label,language,language_name,metric_1_bpb,metric_2_bpb,metric_1_rank,metric_2_rank,metric_2_minus_metric_1_rank,absolute_rank_change
+ngram_monolingual_o5_a0.1,Monolingual byte 5-gram,mlx-community__Qwen3-0.6B-4bit,Qwen3 0.6B (4-bit),arb_Arab,Modern Standard Arabic,2.3416920361828066,1.3672915510822683,5.0,6.0,1.0,1.0
+ngram_monolingual_o5_a0.1,Monolingual byte 5-gram,mlx-community__Qwen3-0.6B-4bit,Qwen3 0.6B (4-bit),eng_Latn,English,4.138935327045639,1.3235914960815824,12.0,5.0,-7.0,7.0
+ngram_monolingual_o5_a0.1,Monolingual byte 5-gram,mlx-community__Qwen3-0.6B-4bit,Qwen3 0.6B (4-bit),hin_Deva,Hindi,1.5413305448476977,1.0699274199461237,2.0,3.0,1.0,1.0
+ngram_monolingual_o5_a0.1,Monolingual byte 5-gram,mlx-community__Qwen3-0.6B-4bit,Qwen3 0.6B (4-bit),jpn_Jpan,Japanese,3.611300072419487,1.5019170976682124,7.0,7.0,0.0,0.0
+ngram_monolingual_o5_a0.1,Monolingual byte 5-gram,mlx-community__Qwen3-0.6B-4bit,Qwen3 0.6B (4-bit),kor_Hang,Korean,3.680219445564639,1.7361004539377312,9.0,10.0,1.0,1.0
+ngram_monolingual_o5_a0.1,Monolingual byte 5-gram,mlx-community__Qwen3-0.6B-4bit,Qwen3 0.6B (4-bit),rus_Cyrl,Russian,2.180435191535718,0.9758910419714364,4.0,2.0,-2.0,2.0
+ngram_monolingual_o5_a0.1,Monolingual byte 5-gram,mlx-community__Qwen3-0.6B-4bit,Qwen3 0.6B (4-bit),spa_Latn,Spanish,3.6331754681418955,1.505174421184796,8.0,8.0,0.0,0.0
+ngram_monolingual_o5_a0.1,Monolingual byte 5-gram,mlx-community__Qwen3-0.6B-4bit,Qwen3 0.6B (4-bit),swh_Latn,Swahili,3.694251868740018,3.474440066733921,10.0,13.0,3.0,3.0
+ngram_monolingual_o5_a0.1,Monolingual byte 5-gram,mlx-community__Qwen3-0.6B-4bit,Qwen3 0.6B (4-bit),tam_Taml,Tamil,1.3129335517338914,1.1215776171303724,1.0,4.0,3.0,3.0
+ngram_monolingual_o5_a0.1,Monolingual byte 5-gram,mlx-community__Qwen3-0.6B-4bit,Qwen3 0.6B (4-bit),tha_Thai,Thai,1.6756490704792897,0.8017265986356498,3.0,1.0,-2.0,2.0
+ngram_monolingual_o5_a0.1,Monolingual byte 5-gram,mlx-community__Qwen3-0.6B-4bit,Qwen3 0.6B (4-bit),tur_Latn,Turkish,3.8866778700377353,2.08320627555632,11.0,11.0,0.0,0.0
+ngram_monolingual_o5_a0.1,Monolingual byte 5-gram,mlx-community__Qwen3-0.6B-4bit,Qwen3 0.6B (4-bit),yor_Latn,Yoruba,3.4692896605815418,3.3953932079243683,6.0,12.0,6.0,6.0
+ngram_monolingual_o5_a0.1,Monolingual byte 5-gram,mlx-community__Qwen3-0.6B-4bit,Qwen3 0.6B (4-bit),zho_Hans,Mandarin Chinese,5.567550661326827,1.5931503431107672,13.0,9.0,-4.0,4.0
+ngram_monolingual_o5_a0.1,Monolingual byte 5-gram,mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),arb_Arab,Modern Standard Arabic,2.3416920361828066,1.302222045460641,5.0,6.0,1.0,1.0
+ngram_monolingual_o5_a0.1,Monolingual byte 5-gram,mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),eng_Latn,English,4.138935327045639,1.2580268536166417,12.0,5.0,-7.0,7.0
+ngram_monolingual_o5_a0.1,Monolingual byte 5-gram,mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),hin_Deva,Hindi,1.5413305448476977,0.9308196418902404,2.0,4.0,2.0,2.0
+ngram_monolingual_o5_a0.1,Monolingual byte 5-gram,mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),jpn_Jpan,Japanese,3.611300072419487,1.391830470945517,7.0,8.0,1.0,1.0
+ngram_monolingual_o5_a0.1,Monolingual byte 5-gram,mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),kor_Hang,Korean,3.680219445564639,1.63908838248881,9.0,10.0,1.0,1.0
+ngram_monolingual_o5_a0.1,Monolingual byte 5-gram,mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),rus_Cyrl,Russian,2.180435191535718,0.8482049421120332,4.0,3.0,-1.0,1.0
+ngram_monolingual_o5_a0.1,Monolingual byte 5-gram,mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),spa_Latn,Spanish,3.6331754681418955,1.3538718407508321,8.0,7.0,-1.0,1.0
+ngram_monolingual_o5_a0.1,Monolingual byte 5-gram,mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),swh_Latn,Swahili,3.694251868740018,2.7726333073510516,10.0,12.0,2.0,2.0
+ngram_monolingual_o5_a0.1,Monolingual byte 5-gram,mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),tam_Taml,Tamil,1.3129335517338914,0.7936519306910123,1.0,2.0,1.0,1.0
+ngram_monolingual_o5_a0.1,Monolingual byte 5-gram,mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),tha_Thai,Thai,1.6756490704792897,0.7483691973047323,3.0,1.0,-2.0,2.0
+ngram_monolingual_o5_a0.1,Monolingual byte 5-gram,mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),tur_Latn,Turkish,3.8866778700377353,1.7095049512096545,11.0,11.0,0.0,0.0
+ngram_monolingual_o5_a0.1,Monolingual byte 5-gram,mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),yor_Latn,Yoruba,3.4692896605815418,3.116846891179866,6.0,13.0,7.0,7.0
+ngram_monolingual_o5_a0.1,Monolingual byte 5-gram,mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),zho_Hans,Mandarin Chinese,5.567550661326827,1.5456181335070887,13.0,9.0,-4.0,4.0
+ngram_multilingual_balanced_o5_a0.1,Balanced multilingual byte 5-gram,mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),arb_Arab,Modern Standard Arabic,2.3572814492589664,1.302222045460641,5.0,6.0,1.0,1.0
+ngram_multilingual_balanced_o5_a0.1,Balanced multilingual byte 5-gram,mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),eng_Latn,English,4.033604689691919,1.2580268536166417,12.0,5.0,-7.0,7.0
+ngram_multilingual_balanced_o5_a0.1,Balanced multilingual byte 5-gram,mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),hin_Deva,Hindi,1.5509468119392913,0.9308196418902404,2.0,4.0,2.0,2.0
+ngram_multilingual_balanced_o5_a0.1,Balanced multilingual byte 5-gram,mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),jpn_Jpan,Japanese,3.584141212510547,1.391830470945517,8.0,8.0,0.0,0.0
+ngram_multilingual_balanced_o5_a0.1,Balanced multilingual byte 5-gram,mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),kor_Hang,Korean,3.6892755149914604,1.63908838248881,10.0,10.0,0.0,0.0
+ngram_multilingual_balanced_o5_a0.1,Balanced multilingual byte 5-gram,mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),rus_Cyrl,Russian,2.1911849483782335,0.8482049421120332,4.0,3.0,-1.0,1.0
+ngram_multilingual_balanced_o5_a0.1,Balanced multilingual byte 5-gram,mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),spa_Latn,Spanish,3.5736330143077626,1.3538718407508321,7.0,7.0,0.0,0.0
+ngram_multilingual_balanced_o5_a0.1,Balanced multilingual byte 5-gram,mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),swh_Latn,Swahili,3.6738966291042843,2.7726333073510516,9.0,12.0,3.0,3.0
+ngram_multilingual_balanced_o5_a0.1,Balanced multilingual byte 5-gram,mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),tam_Taml,Tamil,1.3202779349558191,0.7936519306910123,1.0,2.0,1.0,1.0
+ngram_multilingual_balanced_o5_a0.1,Balanced multilingual byte 5-gram,mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),tha_Thai,Thai,1.6794915721344132,0.7483691973047323,3.0,1.0,-2.0,2.0
+ngram_multilingual_balanced_o5_a0.1,Balanced multilingual byte 5-gram,mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),tur_Latn,Turkish,3.8363080866133417,1.7095049512096545,11.0,11.0,0.0,0.0
+ngram_multilingual_balanced_o5_a0.1,Balanced multilingual byte 5-gram,mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),yor_Latn,Yoruba,3.4164747795942887,3.116846891179866,6.0,13.0,7.0,7.0
+ngram_multilingual_balanced_o5_a0.1,Balanced multilingual byte 5-gram,mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),zho_Hans,Mandarin Chinese,5.525425488760844,1.5456181335070887,13.0,9.0,-4.0,4.0
+mlx-community__Qwen3-0.6B-4bit,Qwen3 0.6B (4-bit),mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),arb_Arab,Modern Standard Arabic,1.3672915510822683,1.302222045460641,6.0,6.0,0.0,0.0
+mlx-community__Qwen3-0.6B-4bit,Qwen3 0.6B (4-bit),mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),eng_Latn,English,1.3235914960815824,1.2580268536166417,5.0,5.0,0.0,0.0
+mlx-community__Qwen3-0.6B-4bit,Qwen3 0.6B (4-bit),mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),hin_Deva,Hindi,1.0699274199461237,0.9308196418902404,3.0,4.0,1.0,1.0
+mlx-community__Qwen3-0.6B-4bit,Qwen3 0.6B (4-bit),mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),jpn_Jpan,Japanese,1.5019170976682124,1.391830470945517,7.0,8.0,1.0,1.0
+mlx-community__Qwen3-0.6B-4bit,Qwen3 0.6B (4-bit),mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),kor_Hang,Korean,1.7361004539377312,1.63908838248881,10.0,10.0,0.0,0.0
+mlx-community__Qwen3-0.6B-4bit,Qwen3 0.6B (4-bit),mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),rus_Cyrl,Russian,0.9758910419714364,0.8482049421120332,2.0,3.0,1.0,1.0
+mlx-community__Qwen3-0.6B-4bit,Qwen3 0.6B (4-bit),mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),spa_Latn,Spanish,1.505174421184796,1.3538718407508321,8.0,7.0,-1.0,1.0
+mlx-community__Qwen3-0.6B-4bit,Qwen3 0.6B (4-bit),mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),swh_Latn,Swahili,3.474440066733921,2.7726333073510516,13.0,12.0,-1.0,1.0
+mlx-community__Qwen3-0.6B-4bit,Qwen3 0.6B (4-bit),mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),tam_Taml,Tamil,1.1215776171303724,0.7936519306910123,4.0,2.0,-2.0,2.0
+mlx-community__Qwen3-0.6B-4bit,Qwen3 0.6B (4-bit),mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),tha_Thai,Thai,0.8017265986356498,0.7483691973047323,1.0,1.0,0.0,0.0
+mlx-community__Qwen3-0.6B-4bit,Qwen3 0.6B (4-bit),mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),tur_Latn,Turkish,2.08320627555632,1.7095049512096545,11.0,11.0,0.0,0.0
+mlx-community__Qwen3-0.6B-4bit,Qwen3 0.6B (4-bit),mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),yor_Latn,Yoruba,3.3953932079243683,3.116846891179866,12.0,13.0,1.0,1.0
+mlx-community__Qwen3-0.6B-4bit,Qwen3 0.6B (4-bit),mlx-community__Qwen3-4B-4bit,Qwen3 4B (4-bit),zho_Hans,Mandarin Chinese,1.5931503431107672,1.5456181335070887,9.0,9.0,0.0,0.0

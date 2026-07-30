@@ -1,0 +1,44 @@
+{
+  "created_at_utc": "2026-07-30T08:15:39.639893+00:00",
+  "stream_block_tokens": 8,
+  "memory_limit_gib": 8,
+  "cache_limit_mib": 128,
+  "abort_peak_gib": 6.0,
+  "models": [
+    {
+      "model": "mlx-community/Qwen3-0.6B-4bit",
+      "snapshot_revision": "73e3e38d981303bc594367cd910ea6eb48349da8",
+      "probe_tokens": 441,
+      "probe_bits": 1168.4587948322296,
+      "peak": {
+        "active_gib": 0.37414561957120895,
+        "cache_gib": 0.0,
+        "peak_gib": 0.4014895334839821
+      },
+      "final": {
+        "active_gib": 0.3123474195599556,
+        "cache_gib": 0.0,
+        "peak_gib": 0.4014895334839821
+      },
+      "passed": true
+    },
+    {
+      "model": "mlx-community/Qwen3-4B-4bit",
+      "snapshot_revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+      "probe_tokens": 441,
+      "probe_bits": 761.4465107191354,
+      "peak": {
+        "active_gib": 2.1862784512341022,
+        "cache_gib": 0.0,
+        "peak_gib": 2.2395776100456715
+      },
+      "final": {
+        "active_gib": 2.109160430729389,
+        "cache_gib": 0.0,
+        "peak_gib": 2.2395776100456715
+      },
+      "passed": true
+    }
+  ],
+  "all_passed": true
+}

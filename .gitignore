@@ -1,0 +1,13 @@
+.DS_Store
+.pytest_cache/
+.ruff_cache/
+.venv/
+__pycache__/
+*.py[cod]
+
+# Downloaded or regenerable corpus files
+data/raw/
+data/processed/
+
+# Incremental local logs
+*.log
