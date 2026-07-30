@@ -1,5 +1,6 @@
 """Study-wide constants fixed before outcome inspection."""
 
+import os
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -17,8 +18,10 @@ FLORES_EXTRACTED = RAW_DIR / "flores200_dataset"
 CORPUS_PATH = PROCESSED_DIR / "flores_panel.parquet"
 CORPUS_MANIFEST = PROCESSED_DIR / "manifest.json"
 
-HF_HOME = Path("/Users/aaronbergman/hf_models")
-HF_CACHE_DIR = HF_HOME / "hub"
+HF_HOME = Path(
+    os.environ.get("HF_HOME", Path.home() / ".cache" / "huggingface")
+).expanduser()
+HF_CACHE_DIR = Path(os.environ.get("HF_HUB_CACHE", HF_HOME / "hub")).expanduser()
 
 NGRAM_ORDERS = (1, 2, 3, 4, 5)
 NGRAM_ALPHA = 0.1

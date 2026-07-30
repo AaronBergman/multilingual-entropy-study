@@ -1,9 +1,8 @@
 {
-  "created_at_utc": "2026-07-30T09:30:01.038410+00:00",
+  "created_at_utc": "2026-07-30T19:46:56.410334+00:00",
   "models": [
     {
       "model_id": "mlx-community/Qwen3-0.6B-4bit",
-      "snapshot_path": "/Users/aaronbergman/hf_models/hub/models--mlx-community--Qwen3-0.6B-4bit/snapshots/73e3e38d981303bc594367cd910ea6eb48349da8",
       "snapshot_revision": "73e3e38d981303bc594367cd910ea6eb48349da8",
       "config.json_sha256": "15d3ac26c043ae477273ed5802ee0f0b33bb14f18c9d3dd70910c02d906e3f1f",
       "tokenizer.json_sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
@@ -86,7 +85,6 @@
     },
     {
       "model_id": "mlx-community/Qwen3-4B-4bit",
-      "snapshot_path": "/Users/aaronbergman/hf_models/hub/models--mlx-community--Qwen3-4B-4bit/snapshots/4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
       "snapshot_revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
       "config.json_sha256": "b5efdcf3b0035a3638e7228dad4d85f5c4a23f156eb7cdb0b44c8366a5d34d9b",
       "tokenizer.json_sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
@@ -172,6 +170,6 @@
   "context_policy": "each sentence independently prefixed by tokenizer BOS, or EOS if no BOS",
   "special_tokens_scored": false,
   "quantization_note": "Both primary models use MLX 4-bit quantization.",
-  "memory_benchmark": "/Users/aaronbergman/nlp1/multilingual-entropy-study/results/memory_benchmark.json",
+  "memory_benchmark": "results/memory_benchmark.json",
   "rows": 26312
 }

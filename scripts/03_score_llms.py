@@ -21,6 +21,7 @@ from multilingual_entropy.config import (
     HF_HOME,
     LLM_MODELS,
     MAX_SENTENCE_TOKENS,
+    REPO_ROOT,
     RESULTS_DIR,
 )
 from multilingual_entropy.mlx_scoring import (
@@ -53,7 +54,6 @@ def model_slug(model_id: str) -> str:
 def snapshot_metadata(model_id: str, snapshot_path: Path) -> dict[str, object]:
     metadata: dict[str, object] = {
         "model_id": model_id,
-        "snapshot_path": str(snapshot_path),
         "snapshot_revision": snapshot_path.name,
     }
     for filename in ("config.json", "tokenizer.json", "tokenizer_config.json"):
@@ -224,7 +224,7 @@ def main() -> None:
         "context_policy": "each sentence independently prefixed by tokenizer BOS, or EOS if no BOS",
         "special_tokens_scored": False,
         "quantization_note": "Both primary models use MLX 4-bit quantization.",
-        "memory_benchmark": str(MEMORY_BENCHMARK_PATH),
+        "memory_benchmark": str(MEMORY_BENCHMARK_PATH.relative_to(REPO_ROOT)),
         "rows": len(existing),
     }
     PROVENANCE_PATH.write_text(

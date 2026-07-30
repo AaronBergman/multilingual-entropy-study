@@ -42,6 +42,8 @@ results and interpretation.
 - Conclusions are directionally robust to n-gram order and training scope, but
   exact correlations change under byte versus character normalization.
 
+![Within-metric cross-language z-scores for byte n-grams and two Qwen3 model sizes](results/figures/cross_language_heatmap.png)
+
 ## Companion gzip study
 
 The delegated compression arm is in [`gzip_arm/`](gzip_arm/). It repeats the
@@ -59,6 +61,8 @@ Requirements:
 - internet access for the first corpus/model download.
 
 ```bash
+git clone https://github.com/AaronBergman/multilingual-entropy-study.git
+cd multilingual-entropy-study
 UV_CACHE_DIR=/tmp/multilingual-entropy-uv uv sync
 UV_CACHE_DIR=/tmp/multilingual-entropy-uv uv run python run_all.py
 ```
@@ -82,9 +86,12 @@ The LLM scorer is memory-bounded: it materializes logits for only eight tokens
 at a time, caps the MLX allocator at 8 GiB, caps its free-buffer cache at
 128 MiB, aborts above a measured 6 GiB MLX peak, and refuses to start until a
 worst-case sequence benchmark passes for both models. It checkpoints after each
-language. Models are cached under
-`/Users/aaronbergman/hf_models/hub`; change `HF_HOME` in `config.py` on another
-machine.
+language. Models use the standard Hugging Face cache by default. Set `HF_HOME`
+or `HF_HUB_CACHE` before running to use an existing cache in another location:
+
+```bash
+HF_HOME=/path/to/huggingface-cache uv run python run_all.py
+```
 
 ## Validate
 
